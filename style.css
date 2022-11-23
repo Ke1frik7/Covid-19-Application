@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Karla";
+    src: url("./Fonts/Arimo-Regular.ttf");
+}
+*::before, *::after, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla";
+}
+body{
+    transition: all 0.5s ease;
+    background: rgba(0, 0, 0, 0.722);
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px auto;
+}
+header{
+    width: 100%0;
+    padding: 1rem;
+}
+.nav{
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav__title{
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 1px;
+    word-spacing: 1px;   
+}
+input[type="checkbox"]{
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background: #fff;
+}
+input[type="checkbox"]::after{
+    content:  " ";
+    background: black;
+    display: inline-block;
+    width: 23px;
+    height: 20px;
+    border-radius: 45%;
+    transition: all 0.5s ease;
+}
+input[type="checkbox"]:checked::after{
+    margin-left: 17px;
+}
+main{
+    width: 100%;
+    height: auto;
+}
+section{
+    width: 100%;
+    height: auto;
+}
+.hero{
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+}
+.hero__align{
+    width: 100%;
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: 200px 750px;
+}
+.cards{
+    text-align: center;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.516);
+    border-radius: 20px;
+}
+.card__title{
+    padding: 1rem;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.card__text{
+    text-align: center;
+}
+.card__text p{
+    padding: 1rem 0rem;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+.hero__form{
+    padding: 0.4rem;
+    text-align: center;
+}
+.hero__form input, .hero__form button{
+    padding: 0.5rem  ;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    outline: 2px solid transparent;
+    transition: all 0.5s ease;
+}
+.hero__form input:focus, .hero__form button:hover{
+    outline: 2px solid aqua;
+}
+.error{
+    display: none;
+}
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
+.chorni{
+    background: rgba(128, 128, 128, 0.419);
+}
+.chorni .nav__title{
+    color: #000;
+}
+.chorni .hero__form button{
+    background: black;
+    color: #fff;
+}
+.hero__align{
+    text-align: center;
+}
+.hero__align .h1__network{
+    font-size: 50px;
+    letter-spacing: 2px;
+}
